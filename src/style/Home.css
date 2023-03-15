@@ -30,7 +30,6 @@
     z-index: -1;
 }
 
-
 .home > main > h1 {
     font: 400 6rem var(--text1);
     color: var(--first);
@@ -40,3 +39,136 @@
     font: 900 1rem var(--text1);
 }
 
+.home2 {
+    padding: 500px 0;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(black, var(--second));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+}
+
+.home2 > img {
+    width: 30%;
+    animation: imgUp 1.2s linear infinite alternate;
+}
+
+@keyframes imgUp {
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+.home2 > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100vh;
+    padding: 5rem;
+}
+
+.home2 > div > p {
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font: 100 1.2rem var(--text2);
+}
+
+.home3 {
+    width: 100%;
+    height: 120vh;
+    background-color: var(--second);
+    display: flex;
+}
+
+.home3 > div {
+    width: 70%;
+    background: white;
+    height: 100vh;
+    border-radius: 0 200px 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.home3 > div > h1 {
+    text-transform: uppercase;
+    border-bottom: 3px solid black;
+    padding: 0.5rem;
+    width: 15rem;
+}
+
+.home3 > div > p {
+    font: italic 100 1.2rem var(--text4);
+    padding: 5rem;
+    line-height: 170%;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+
+.home4 {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--second);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.home4 > div {
+    background-color: var(--third);
+    display: flex;
+    justify-content: center;
+    border-radius: 200px 0 0 200px;
+    width: 70%;
+    height: 70vh;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.home4 > div >h1{
+    color: var(--first);
+    width: 140px;
+    text-transform: uppercase;
+    padding: 0.5rem;
+    border-bottom: 3px solid white;
+}
+
+.home4 > div >article{
+    display: flex;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.home4 > div >article>div{
+    margin: 1rem;
+    animation: imgUp 1.2s linear infinite alternate;
+    height: 10rem;
+    width: 10rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    transition: all .8s;
+}
+
+.home4 > div >article>div:hover{
+    filter: invert(1);
+}
+.home4 > div >article>div>svg{
+    font-size: 4rem;
+}
+
+.home4 > div >article>div>p{
+    font: 900 1.2rem var(--text3);
+}
