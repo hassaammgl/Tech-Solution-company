@@ -1,0 +1,42 @@
+@import "./color.css";
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+.home > main {
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding: 2rem;
+    justify-content: center;
+}
+
+.home > main::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+.home > main > h1 {
+    font: 400 6rem var(--text1);
+    color: var(--first);
+}
+.home > main > p {
+    color: var(--first);
+    font: 900 1rem var(--text1);
+}
+

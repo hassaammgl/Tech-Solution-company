@@ -1,0 +1,10 @@
+:root {
+    --first: white;
+    --second: #090c31;
+    --third: #5853ff;
+    --fourth: rgb(44,44,44);
+    --text1:'Baloo 2', cursive;
+    --text2:'Noto Sans TC', sans-serif;
+    --text3:'Pacifico', cursive;
+    --text4: 'Tilt Neon', cursive;
+}
