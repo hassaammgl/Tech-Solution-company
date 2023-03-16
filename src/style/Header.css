@@ -30,3 +30,23 @@ nav > main > a {
 nav > main > a:hover {
     color: var(--third);
 }
+
+@media screen and (max-width: 380px) {
+    nav {
+        padding: 1.8rem;
+    }
+
+    nav > h1 {
+        display: none;
+    }
+
+    nav >main{
+        position: absolute;
+        right: 0%;
+    }
+    
+    nav > main > a {
+        margin:0 11px;
+        justify-content: flex-end;
+    } 
+}

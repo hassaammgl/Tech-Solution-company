@@ -45,11 +45,11 @@
     width: 80%;
     padding: 1rem;
     border-radius: 5px;
-    border: 1px solid rgba(123, 123, 123, .6);
+    border: 1px solid rgba(123, 123, 123, 0.6);
     outline: none;
 }
 
-button{
+button {
     margin: 3rem 0;
     padding: 0.7rem;
     border: none;
@@ -60,6 +60,31 @@ button{
     font: 500 1rem var(--text1);
 }
 
-button:hover{
-    opacity: .9;
+button:hover {
+    opacity: 0.9;
+}
+
+@media screen and (max-width: 380px) {
+    .contact {
+        height: 90vh;
+    }
+
+    .contact > main {
+        height: 99vh;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 0 0px 0px 0;
+    }
+
+    .contact > main > h1 {
+        margin: 1rem;
+    }
+
+    .contact > main > form {
+        margin: 0;
+    }
+
+    .contact > main > form > div {
+        width: 100%;
+    }
 }

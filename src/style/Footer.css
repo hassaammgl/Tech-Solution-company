@@ -44,3 +44,31 @@ footer > div > div > a:hover {
     color: var(--third);
 }
 
+@media screen and (max-width: 380px) {
+    footer {
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer > div {
+        align-items: center;
+    }
+
+    footer > div > h1 {
+        font: 700 1.5rem var(--text1);
+    }
+
+    footer > div > p {
+        font: 500 1.2rem var(--text1);
+    }
+
+    footer > div > h5 {
+        font: 300 1.4rem var(--text1);
+    }
+    footer > div > div > a {
+        font: 500 1rem var(--text2);
+        text-decoration: underline;
+        margin-bottom: 12px;
+    }
+}
